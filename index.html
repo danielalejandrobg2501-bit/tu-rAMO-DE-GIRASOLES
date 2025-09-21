@@ -10,23 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
 
-     <!-- 
 
-Contáctame:
-
-    * Invitame un café
- https://buymeacoffee.com/alexx.dev
-
-    * Portafolio Web
- https://alexxdev.vercel.app
-
-    * Sigueme en tiktok
- https://www.tiktok.com/@alexx.dev?is_from_webapp=1&sender_device=pc 
- 
-    *Canal de WhatsApp
- https://whatsapp.com/channel/0029VazQEXq90x2vIdNkrH1p
-
--->
 
     
     <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;❤️&lt;/text&gt;&lt;/svg&gt;">
@@ -69,7 +53,7 @@ Contáctame:
     
     <div id="falling-flower-container"><div class="falling-flower-wrapper" style="left: 70.819vw; animation-duration: 14.9193s;"><div class="falling-flower" style="animation-duration: 4.23901s; width: 16.8753px; height: 16.8753px; filter: blur(1.69914px); opacity: 0.946717;"></div></div></div>
     <div id="particle-container"><div class="particle" style="width: 5.50333px; height: 5.50333px; left: 60.292px; top: 363.859px; animation-delay: 5.46079s;"></div><div class="particle" style="width: 2.76581px; height: 2.76581px; left: 379.898px; top: 156.974px; animation-delay: 0.682137s;"></div></div>
-    <h1 class="love-title">Para Ti - Te Amo Micaela 🌻</h1>
+    <h1 class="love-title">Te Amo 🌻</h1>
 
     
     <div class="flowers">
@@ -97,5 +81,19 @@ Contáctame:
     <audio id="audioPlayer" loop="">
         <source src="assets/sound.mp3" type="audio/mpeg">
     </audio>
-
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const nombre = params.get('nombre');
+            
+            if (nombre) {
+                const titulo = document.querySelector('.love-title');
+                if (titulo) {
+                    titulo.textContent = 'Para Ti - Te Amo ' + nombre + ' 🌻';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
 </body></html>
